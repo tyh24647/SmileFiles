@@ -110,13 +110,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1A6B56FB206C716000E3CB42 /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Utilities;
-			sourceTree = "<group>";
-		};
 		1A704155206C393400B00334 = {
 			isa = PBXGroup;
 			children = (
@@ -141,10 +134,13 @@
 		1A704160206C393400B00334 /* SmileFiles */ = {
 			isa = PBXGroup;
 			children = (
+				1A7041CC206C43B000B00334 /* CoreData */,
 				1A704170206C393500B00334 /* Info.plist */,
-				1A7041AF206C41E500B00334 /* SmileFiles.entitlements */,
-				1A704168206C393400B00334 /* SmileFiles.xcdatamodeld */,
-				1A6B56FB206C716000E3CB42 /* Utilities */,
+				1A6B56FC206C717000E3CB42 /* MathUtils.swift */,
+				1A672DA0206C83F700FE1649 /* KeyValuePair.swift */,
+				1A672DA2206C89CA00FE1649 /* UserDataAttribute.swift */,
+				1A672DA4206C9B9700FE1649 /* ApplicationConstants.swift */,
+				1ACB5DEA206D15580049788E /* DefaultUserDataAttributes.swift */,
 				1A672D9E206C798700FE1649 /* User.swift */,
 				1A704161206C393400B00334 /* AppDelegate.swift */,
 				1A704163206C393400B00334 /* ViewController.swift */,
@@ -152,6 +148,8 @@
 				1A70416B206C393500B00334 /* Assets.xcassets */,
 				1A704165206C393400B00334 /* Main.storyboard */,
 				1A70416D206C393500B00334 /* LaunchScreen.storyboard */,
+				1A7041AF206C41E500B00334 /* SmileFiles.entitlements */,
+				1A704168206C393400B00334 /* SmileFiles.xcdatamodeld */,
 			);
 			path = SmileFiles;
 			sourceTree = "<group>";
@@ -187,6 +185,9 @@
 				1A6B56EE206C5A5F00E3CB42 /* SFTheme+CoreDataProperties.swift */,
 				1AC68011206C492400C23DC5 /* ManagedObjectContext.swift */,
 			);
+			name = CoreData;
+			path = SmileFiles/CoreData;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
