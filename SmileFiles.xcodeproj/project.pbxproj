@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A672D9F206C798700FE1649 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A672D9E206C798700FE1649 /* User.swift */; };
+		1A672DA1206C83F700FE1649 /* KeyValuePair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A672DA0206C83F700FE1649 /* KeyValuePair.swift */; };
+		1A672DA3206C89CA00FE1649 /* UserDataAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A672DA2206C89CA00FE1649 /* UserDataAttribute.swift */; };
+		1A672DA5206C9B9700FE1649 /* ApplicationConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A672DA4206C9B9700FE1649 /* ApplicationConstants.swift */; };
+		1A6B56EF206C5A5F00E3CB42 /* SFUser+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6B56E9206C5A5E00E3CB42 /* SFUser+CoreDataClass.swift */; };
+		1A6B56F0206C5A5F00E3CB42 /* SFUser+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6B56EA206C5A5F00E3CB42 /* SFUser+CoreDataProperties.swift */; };
+		1A6B56F1206C5A5F00E3CB42 /* SFPreferences+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6B56EB206C5A5F00E3CB42 /* SFPreferences+CoreDataClass.swift */; };
+		1A6B56F2206C5A5F00E3CB42 /* SFPreferences+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6B56EC206C5A5F00E3CB42 /* SFPreferences+CoreDataProperties.swift */; };
+		1A6B56F3206C5A5F00E3CB42 /* SFTheme+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6B56ED206C5A5F00E3CB42 /* SFTheme+CoreDataClass.swift */; };
+		1A6B56F4206C5A5F00E3CB42 /* SFTheme+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6B56EE206C5A5F00E3CB42 /* SFTheme+CoreDataProperties.swift */; };
+		1A6B56F7206C6C0E00E3CB42 /* SFModel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6B56F5206C6C0E00E3CB42 /* SFModel+CoreDataClass.swift */; };
+		1A6B56F8206C6C0E00E3CB42 /* SFModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6B56F6206C6C0E00E3CB42 /* SFModel+CoreDataProperties.swift */; };
+		1A6B56FA206C6CEF00E3CB42 /* SFSharedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6B56F9206C6CEF00E3CB42 /* SFSharedData.swift */; };
+		1A6B56FD206C717000E3CB42 /* MathUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6B56FC206C717000E3CB42 /* MathUtils.swift */; };
 		1A704162206C393400B00334 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A704161206C393400B00334 /* AppDelegate.swift */; };
 		1A704164206C393400B00334 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A704163206C393400B00334 /* ViewController.swift */; };
 		1A704167206C393400B00334 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A704165206C393400B00334 /* Main.storyboard */; };
@@ -15,6 +29,8 @@
 		1A70416F206C393500B00334 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A70416D206C393500B00334 /* LaunchScreen.storyboard */; };
 		1A70417A206C393500B00334 /* SmileFilesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A704179206C393500B00334 /* SmileFilesTests.swift */; };
 		1A704185206C393500B00334 /* SmileFilesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A704184206C393500B00334 /* SmileFilesUITests.swift */; };
+		1AC68012206C492400C23DC5 /* ManagedObjectContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC68011206C492400C23DC5 /* ManagedObjectContext.swift */; };
+		1ACB5DEB206D15580049788E /* DefaultUserDataAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACB5DEA206D15580049788E /* DefaultUserDataAttributes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +51,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A672D9E206C798700FE1649 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		1A672DA0206C83F700FE1649 /* KeyValuePair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValuePair.swift; sourceTree = "<group>"; };
+		1A672DA2206C89CA00FE1649 /* UserDataAttribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataAttribute.swift; sourceTree = "<group>"; };
+		1A672DA4206C9B9700FE1649 /* ApplicationConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationConstants.swift; sourceTree = "<group>"; };
+		1A6B56E9206C5A5E00E3CB42 /* SFUser+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SFUser+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1A6B56EA206C5A5F00E3CB42 /* SFUser+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SFUser+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		1A6B56EB206C5A5F00E3CB42 /* SFPreferences+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SFPreferences+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1A6B56EC206C5A5F00E3CB42 /* SFPreferences+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SFPreferences+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		1A6B56ED206C5A5F00E3CB42 /* SFTheme+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SFTheme+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1A6B56EE206C5A5F00E3CB42 /* SFTheme+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SFTheme+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		1A6B56F5206C6C0E00E3CB42 /* SFModel+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SFModel+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1A6B56F6206C6C0E00E3CB42 /* SFModel+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SFModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		1A6B56F9206C6CEF00E3CB42 /* SFSharedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSharedData.swift; sourceTree = "<group>"; };
+		1A6B56FC206C717000E3CB42 /* MathUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathUtils.swift; sourceTree = "<group>"; };
 		1A70415E206C393400B00334 /* SmileFiles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmileFiles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A704161206C393400B00334 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A704163206C393400B00334 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +79,10 @@
 		1A704180206C393500B00334 /* SmileFilesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmileFilesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A704184206C393500B00334 /* SmileFilesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileFilesUITests.swift; sourceTree = "<group>"; };
 		1A704186206C393500B00334 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A7041A8206C418500B00334 /* SmileFiles-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SmileFiles-Bridging-Header.h"; sourceTree = "<group>"; };
+		1A7041AF206C41E500B00334 /* SmileFiles.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SmileFiles.entitlements; sourceTree = "<group>"; };
+		1AC68011206C492400C23DC5 /* ManagedObjectContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedObjectContext.swift; sourceTree = "<group>"; };
+		1ACB5DEA206D15580049788E /* DefaultUserDataAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultUserDataAttributes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,13 +110,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A6B56FB206C716000E3CB42 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				1A6B56FC206C717000E3CB42 /* MathUtils.swift */,
+				1A672DA0206C83F700FE1649 /* KeyValuePair.swift */,
+				1A672DA2206C89CA00FE1649 /* UserDataAttribute.swift */,
+				1A672DA4206C9B9700FE1649 /* ApplicationConstants.swift */,
+				1ACB5DEA206D15580049788E /* DefaultUserDataAttributes.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		1A704155206C393400B00334 = {
 			isa = PBXGroup;
 			children = (
+				1A7041CC206C43B000B00334 /* Core Data */,
 				1A704160206C393400B00334 /* SmileFiles */,
 				1A704178206C393500B00334 /* SmileFilesTests */,
 				1A704183206C393500B00334 /* SmileFilesUITests */,
 				1A70415F206C393400B00334 /* Products */,
+				1A7041A8206C418500B00334 /* SmileFiles-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +147,17 @@
 		1A704160206C393400B00334 /* SmileFiles */ = {
 			isa = PBXGroup;
 			children = (
+				1A704170206C393500B00334 /* Info.plist */,
+				1A7041AF206C41E500B00334 /* SmileFiles.entitlements */,
+				1A704168206C393400B00334 /* SmileFiles.xcdatamodeld */,
+				1A6B56FB206C716000E3CB42 /* Utilities */,
+				1A672D9E206C798700FE1649 /* User.swift */,
 				1A704161206C393400B00334 /* AppDelegate.swift */,
 				1A704163206C393400B00334 /* ViewController.swift */,
-				1A704165206C393400B00334 /* Main.storyboard */,
+				1A6B56F9206C6CEF00E3CB42 /* SFSharedData.swift */,
 				1A70416B206C393500B00334 /* Assets.xcassets */,
+				1A704165206C393400B00334 /* Main.storyboard */,
 				1A70416D206C393500B00334 /* LaunchScreen.storyboard */,
-				1A704170206C393500B00334 /* Info.plist */,
-				1A704168206C393400B00334 /* SmileFiles.xcdatamodeld */,
 			);
 			path = SmileFiles;
 			sourceTree = "<group>";
@@ -126,6 +178,22 @@
 				1A704186206C393500B00334 /* Info.plist */,
 			);
 			path = SmileFilesUITests;
+			sourceTree = "<group>";
+		};
+		1A7041CC206C43B000B00334 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				1A6B56F5206C6C0E00E3CB42 /* SFModel+CoreDataClass.swift */,
+				1A6B56F6206C6C0E00E3CB42 /* SFModel+CoreDataProperties.swift */,
+				1A6B56E9206C5A5E00E3CB42 /* SFUser+CoreDataClass.swift */,
+				1A6B56EA206C5A5F00E3CB42 /* SFUser+CoreDataProperties.swift */,
+				1A6B56EB206C5A5F00E3CB42 /* SFPreferences+CoreDataClass.swift */,
+				1A6B56EC206C5A5F00E3CB42 /* SFPreferences+CoreDataProperties.swift */,
+				1A6B56ED206C5A5F00E3CB42 /* SFTheme+CoreDataClass.swift */,
+				1A6B56EE206C5A5F00E3CB42 /* SFTheme+CoreDataProperties.swift */,
+				1AC68011206C492400C23DC5 /* ManagedObjectContext.swift */,
+			);
+			path = "Core Data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +264,21 @@
 				TargetAttributes = {
 					1A70415D206C393400B00334 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.DataProtection = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					1A704174206C393500B00334 = {
 						CreatedOnToolsVersion = 9.3;
@@ -259,9 +342,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A6B56F3206C5A5F00E3CB42 /* SFTheme+CoreDataClass.swift in Sources */,
+				1A6B56EF206C5A5F00E3CB42 /* SFUser+CoreDataClass.swift in Sources */,
+				1A672DA5206C9B9700FE1649 /* ApplicationConstants.swift in Sources */,
 				1A704164206C393400B00334 /* ViewController.swift in Sources */,
 				1A704162206C393400B00334 /* AppDelegate.swift in Sources */,
+				1A6B56F7206C6C0E00E3CB42 /* SFModel+CoreDataClass.swift in Sources */,
+				1A6B56F4206C5A5F00E3CB42 /* SFTheme+CoreDataProperties.swift in Sources */,
+				1AC68012206C492400C23DC5 /* ManagedObjectContext.swift in Sources */,
+				1A6B56FD206C717000E3CB42 /* MathUtils.swift in Sources */,
+				1A672D9F206C798700FE1649 /* User.swift in Sources */,
+				1A6B56F1206C5A5F00E3CB42 /* SFPreferences+CoreDataClass.swift in Sources */,
+				1A6B56F8206C6C0E00E3CB42 /* SFModel+CoreDataProperties.swift in Sources */,
+				1A6B56FA206C6CEF00E3CB42 /* SFSharedData.swift in Sources */,
 				1A70416A206C393400B00334 /* SmileFiles.xcdatamodeld in Sources */,
+				1A6B56F0206C5A5F00E3CB42 /* SFUser+CoreDataProperties.swift in Sources */,
+				1A672DA3206C89CA00FE1649 /* UserDataAttribute.swift in Sources */,
+				1A6B56F2206C5A5F00E3CB42 /* SFPreferences+CoreDataProperties.swift in Sources */,
+				1ACB5DEB206D15580049788E /* DefaultUserDataAttributes.swift in Sources */,
+				1A672DA1206C83F700FE1649 /* KeyValuePair.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,7 +418,8 @@
 		1A704187206C393500B00334 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -379,7 +479,8 @@
 		1A704188206C393500B00334 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -434,6 +535,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = SmileFiles/SmileFiles.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GZ6B7VNBWJ;
 				INFOPLIST_FILE = SmileFiles/Info.plist;
@@ -443,6 +547,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tylero056.SmileFiles;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SmileFiles-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -452,6 +558,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = SmileFiles/SmileFiles.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GZ6B7VNBWJ;
 				INFOPLIST_FILE = SmileFiles/Info.plist;
@@ -461,6 +570,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tylero056.SmileFiles;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SmileFiles-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

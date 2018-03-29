@@ -1,4 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14124.1" systemVersion="17E182a" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="SFModel" representedClassName="SFModel" isAbstract="YES" syncable="YES">
+        <attribute name="users" optional="YES" attributeType="Transformable" customClassName="SFUser" syncable="YES"/>
+    </entity>
+    <entity name="SFPreferences" representedClassName="SFPreferences" isAbstract="YES" parentEntity="SFUser" syncable="YES">
+        <attribute name="browserEnabled" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="useExternalBrowser" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="useInAppSafari" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="SFTheme" representedClassName="SFTheme" isAbstract="YES" parentEntity="SFModel" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="SFUser" representedClassName="SFUser" isAbstract="YES" parentEntity="SFModel" syncable="YES">
+        <attribute name="canChangeTheme" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="current" optional="YES" attributeType="Transformable" customClassName="User" syncable="YES"/>
+        <attribute name="dataDidChange" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="didCompleteOnboarding" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="files" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="hasCloudFiles" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="hasFiles" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="hasOfflineFiles" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isDebug" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isLoggedIn" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isVerified" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="nickname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="preferences" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="selectedTheme" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="shouldSendEmail" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uuid" optional="YES" attributeType="UUID" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="SFModel" positionX="90" positionY="117" width="128" height="60"/>
+        <element name="SFPreferences" positionX="250" positionY="135" width="128" height="90"/>
+        <element name="SFTheme" positionX="90" positionY="126" width="128" height="30"/>
+        <element name="SFUser" positionX="-63" positionY="-18" width="128" height="315"/>
+    </elements>
 </model>
