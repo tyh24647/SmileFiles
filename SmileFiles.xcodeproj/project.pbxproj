@@ -125,7 +125,7 @@
 		1A704155206C393400B00334 = {
 			isa = PBXGroup;
 			children = (
-				1A7041CC206C43B000B00334 /* Core Data */,
+				1A7041CC206C43B000B00334 /* CoreData */,
 				1A704160206C393400B00334 /* SmileFiles */,
 				1A704178206C393500B00334 /* SmileFilesTests */,
 				1A704183206C393500B00334 /* SmileFilesUITests */,
@@ -180,7 +180,7 @@
 			path = SmileFilesUITests;
 			sourceTree = "<group>";
 		};
-		1A7041CC206C43B000B00334 /* Core Data */ = {
+		1A7041CC206C43B000B00334 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
 				1A6B56F5206C6C0E00E3CB42 /* SFModel+CoreDataClass.swift */,
@@ -193,7 +193,7 @@
 				1A6B56EE206C5A5F00E3CB42 /* SFTheme+CoreDataProperties.swift */,
 				1AC68011206C492400C23DC5 /* ManagedObjectContext.swift */,
 			);
-			path = "Core Data";
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
