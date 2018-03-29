@@ -58,10 +58,10 @@
 		1A6B56E9206C5A5E00E3CB42 /* SFUser+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SFUser+CoreDataClass.swift"; sourceTree = "<group>"; };
 		1A6B56EA206C5A5F00E3CB42 /* SFUser+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SFUser+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		1A6B56EB206C5A5F00E3CB42 /* SFPreferences+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SFPreferences+CoreDataClass.swift"; sourceTree = "<group>"; };
-		1A6B56EC206C5A5F00E3CB42 /* SFPreferences+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SFPreferences+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		1A6B56EC206C5A5F00E3CB42 /* SFPreferences+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "SFPreferences+CoreDataProperties.swift"; path = "SmileFiles/CoreData/SFPreferences+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		1A6B56ED206C5A5F00E3CB42 /* SFTheme+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SFTheme+CoreDataClass.swift"; sourceTree = "<group>"; };
-		1A6B56EE206C5A5F00E3CB42 /* SFTheme+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SFTheme+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		1A6B56F5206C6C0E00E3CB42 /* SFModel+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SFModel+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1A6B56EE206C5A5F00E3CB42 /* SFTheme+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "SFTheme+CoreDataProperties.swift"; path = "SmileFiles/CoreData/SFTheme+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		1A6B56F5206C6C0E00E3CB42 /* SFModel+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "SFModel+CoreDataClass.swift"; path = "SmileFiles/CoreData/SFModel+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
 		1A6B56F6206C6C0E00E3CB42 /* SFModel+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SFModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		1A6B56F9206C6CEF00E3CB42 /* SFSharedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSharedData.swift; sourceTree = "<group>"; };
 		1A6B56FC206C717000E3CB42 /* MathUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathUtils.swift; sourceTree = "<group>"; };
@@ -113,11 +113,6 @@
 		1A6B56FB206C716000E3CB42 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				1A6B56FC206C717000E3CB42 /* MathUtils.swift */,
-				1A672DA0206C83F700FE1649 /* KeyValuePair.swift */,
-				1A672DA2206C89CA00FE1649 /* UserDataAttribute.swift */,
-				1A672DA4206C9B9700FE1649 /* ApplicationConstants.swift */,
-				1ACB5DEA206D15580049788E /* DefaultUserDataAttributes.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -125,7 +120,6 @@
 		1A704155206C393400B00334 = {
 			isa = PBXGroup;
 			children = (
-				1A7041CC206C43B000B00334 /* CoreData */,
 				1A704160206C393400B00334 /* SmileFiles */,
 				1A704178206C393500B00334 /* SmileFilesTests */,
 				1A704183206C393500B00334 /* SmileFilesUITests */,
@@ -193,8 +187,6 @@
 				1A6B56EE206C5A5F00E3CB42 /* SFTheme+CoreDataProperties.swift */,
 				1AC68011206C492400C23DC5 /* ManagedObjectContext.swift */,
 			);
-			path = CoreData;
-			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
