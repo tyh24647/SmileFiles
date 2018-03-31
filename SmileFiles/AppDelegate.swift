@@ -7,16 +7,21 @@
 //
 
 import UIKit
+import AVKit
+import WebKit
+import AssetsLibrary
+import Photos
+import MediaPlayer
+import UserNotifications
 import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    @objc var TAG = NSStringFromClass(classForCoder()).components(separatedBy: ".").last! as String
     
     public var managedObjectContext: NSManagedObjectContext!
     public var window: UIWindow?
     
-    
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         self.managedObjectContext = SFSharedData.instance.persistentContainer.viewContext
@@ -26,13 +31,82 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             in: self.managedObjectContext
         )
         
+        
+        #if DEBUG
+        print("Application launched")
+        #endif
+        
+        #if DEBUG
+        print("Requesting access to \"AVCaptureDevice\"...")
+        #endif
+        
+        // request camera and photos permissions
+        self.requestVideosAuthStatus()
+        self.requestPhotosAuthStatus()
+        
+        self.initDefaults(application)
+        
+        // create shared user object
         SFSharedData.user = NSManagedObject(entity: usrData!, insertInto: ManagedObjectContext.current) as! SFUser
+        
         
         
         //print("Initializing test user: \(user.debugDescription)");
         
         
         return true
+    }
+    
+    private func initDefaults(_ application: UIApplication) -> Void {
+        application.applicationSupportsShakeToEdit = true
+        
+        setupNotifications()
+    }
+    
+    private func setupNotifications() -> Void {
+        NotificationCenter.default.addObserver(self, selector: #selector(willEnterFullScreen), name: NSNotification.Name(rawValue: "ShouldEnterFullScreen"), object: nil)
+    }
+    
+    @discardableResult
+    func requestVideosAuthStatus() -> Bool {
+        let avCaptureAuthStatus = AVCaptureDevice.authorizationStatus(for: .video)
+        if avCaptureAuthStatus == .notDetermined {
+            AVCaptureDevice.requestAccess(
+                for: .video,
+                completionHandler: { response in
+                    if response {
+                        #if DEBUG
+                        print("\"AVCaptureDevice\" access granted")
+                        #endif
+                    } else {
+                        #if DEBUG
+                        print("\"AVCaptureDevice\" access denied")
+                        #endif
+                    }
+            })
+        }
+        
+        return avCaptureAuthStatus == .authorized
+    }
+    
+    @discardableResult
+    func requestPhotosAuthStatus() -> Bool {
+        let photosAuthStatus = PHPhotoLibrary.authorizationStatus()
+        if photosAuthStatus == .notDetermined {
+            PHPhotoLibrary.requestAuthorization({photosAuthStatus in
+                if photosAuthStatus == .authorized {
+                    #if DEBUG
+                    print("User authorized camera roll access")
+                    #endif
+                } else {
+                    #if DEBUG
+                    print("User denied camera roll access")
+                    #endif
+                }
+            })
+        }
+        
+        return photosAuthStatus == .authorized
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
@@ -57,6 +131,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
         // Saves changes in the application's managed object context before the application terminates.
         self.saveContext()
+    }
+    
+    @objc func willEnterFullScreen(_ notification: Notification) -> Void {
+        
+    }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        
+    }
+    
+    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
+        
+    }
+    
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        
     }
 
     // MARK: - Core Data stack

@@ -1,0 +1,43 @@
+PODS:
+  - Alamofire (4.7.0)
+  - DynamicBlurView (2.0.2)
+  - MMDrawerController (0.5.7):
+    - MMDrawerController/Core (= 0.5.7)
+    - MMDrawerController/MMDrawerBarButtonItem (= 0.5.7)
+    - MMDrawerController/MMDrawerVisualStates (= 0.5.7)
+    - MMDrawerController/Subclass (= 0.5.7)
+  - MMDrawerController/Core (0.5.7)
+  - MMDrawerController/MMDrawerBarButtonItem (0.5.7):
+    - MMDrawerController/Core
+  - MMDrawerController/MMDrawerVisualStates (0.5.7):
+    - MMDrawerController/Core
+  - MMDrawerController/Subclass (0.5.7):
+    - MMDrawerController/Core
+  - SwiftyJSON (4.0.0)
+  - TableViewDragger (1.1.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.5)
+  - DynamicBlurView
+  - MMDrawerController (~> 0.5.7)
+  - SwiftyJSON
+  - TableViewDragger
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - DynamicBlurView
+    - MMDrawerController
+    - SwiftyJSON
+    - TableViewDragger
+
+SPEC CHECKSUMS:
+  Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
+  DynamicBlurView: aa6db4defc6e537eb86fc5e58dd3991666178399
+  MMDrawerController: 7a4cf8e25596bf2434e03ce50d22a8608ddee6a1
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
+  TableViewDragger: 28692c57e3dfd32d5bc985e41f2e986f99da6baa
+
+PODFILE CHECKSUM: 9c3cbaf67473750980f89701c483b5320897305a
+
+COCOAPODS: 1.5.0.beta.1

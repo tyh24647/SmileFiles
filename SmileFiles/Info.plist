@@ -2,10 +2,20 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>kTCCServiceMediaLibrary</key>
+	<string>You can play and save music files</string>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>You can store media</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>You can access and modify the photos in your Camera Roll</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>You can store photos in the Camera Roll</string>
+	<key>NSCameraUsageDescription</key>
+	<string>You can take photos</string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>You can share files via Bluetooth</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
-	<key>CFBundleDisplayName</key>
-	<string>SmileFiles</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
