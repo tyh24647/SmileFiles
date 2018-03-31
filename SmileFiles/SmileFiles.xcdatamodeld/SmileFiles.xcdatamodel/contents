@@ -5,9 +5,14 @@
         <attribute name="users" optional="YES" attributeType="Transformable" customClassName="SFUser" syncable="YES"/>
     </entity>
     <entity name="SFPreferences" representedClassName="SFPreferences" isAbstract="YES" parentEntity="SFUser" syncable="YES">
+        <attribute name="allowsMediaSaving" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="browserEnabled" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="encryptFiles" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="privateBrowsingEnabled" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="useExternalBrowser" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="useInAppSafari" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="user" optional="YES" attributeType="Transformable" customClassName="SFUser" syncable="YES"/>
+        <relationship name="savedUser" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SFUser" inverseName="userPreferences" inverseEntity="SFUser" syncable="YES"/>
     </entity>
     <entity name="SFTheme" representedClassName="SFTheme" isAbstract="YES" parentEntity="SFModel" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
@@ -31,11 +36,12 @@
         <attribute name="shouldSendEmail" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="uuid" optional="YES" attributeType="UUID" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="userPreferences" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SFPreferences" inverseName="savedUser" inverseEntity="SFPreferences" syncable="YES"/>
     </entity>
     <elements>
         <element name="SFModel" positionX="90" positionY="117" width="128" height="75"/>
-        <element name="SFPreferences" positionX="250" positionY="135" width="128" height="90"/>
+        <element name="SFPreferences" positionX="250" positionY="135" width="128" height="165"/>
         <element name="SFTheme" positionX="90" positionY="126" width="128" height="30"/>
-        <element name="SFUser" positionX="-63" positionY="-18" width="128" height="315"/>
+        <element name="SFUser" positionX="-63" positionY="-18" width="128" height="330"/>
     </elements>
 </model>

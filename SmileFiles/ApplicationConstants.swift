@@ -18,6 +18,10 @@ public struct ApplicationConstants {
             
         }
         
+        public struct Web {
+            public static let url = "https://www.google.com/"
+        }
+        
     }
     
 }
